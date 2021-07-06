@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee Deatails</title>
+    <script>
+        function setFullName() {
+            var fName = document.getElementById("firstname");
+            var lName = document.getElementById("lastname");
+            var fullName = document.getElementById("fullname");
+            fullName.value = fName.value+ " " +lName.value;
+        }
+    </script>
 </head>
+
 <body>
     <h1>Employee Details</h1>
     <hr>
     <br></br>
     <h3>Personal Info</h3>
     <br></br>
-    <label>First Name:</label>
-    <input type="text">
+    <label>First Name</label>
+    <input type="text" id="firstname">
     <br></br>
-    <label>Last Name:</label>
-    <input type="text">
-    <button>Full name</button>
+    <label>Last Name</label>
+    <input type="text" id="lastname">
+    <button onclick="setFullName()">Full Name</button>
     <br><br><br>
     <label>Full Name</label>
-    <input type="text">
-
+    <input type="text" id="fullname">
+    <br><br>
     <hr>
 </body>
+
 </html>
