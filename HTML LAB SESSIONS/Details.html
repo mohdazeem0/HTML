@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee info</title>
+    <script>
+      function setFullName() 
+      {
+        var fname = document.getElementById("firstname");
+        var mname = document.getElementById("middlename");
+        var lname = document.getElementById("lastname");
+        var fullname = document.getElementById("fullname");
+        fullname.value = fname.value + " " + mname.value + " " + lname.value;
+      }
+      function clrme(){
+          var clrme = document.getElementById("fullname");
+          clrme.value = null;
+      }
+    </script>
+  </head>
+
+    <h1>Employee Information</h1>
+    <hr />
+    <h2>Personal Information</h2>
+
+    <label>First Name</label>
+    <input type="text" placeholder="Enter your First Name" id="firstname" />
+    <br /><br />
+
+    <label>Middle Name</label>
+    <input type="text"  placeholder="Enter your Middle Name" id="middlename" />
+    <br /><br />
+
+    <label>Last Name</label>
+    <input type="text"  placeholder="Enter your Last Name" id="lastname" />
+    <br /><br />
+
+    <button onmouseover="setFullName()">Full Name</button>
+    <br /><br /><br />
+
+    <label>Full Name</label>
+    <input type="text"  placeholder="Your Full Name " id="fullname" />
+    <br />
+    <button onclick="clrme()">CLEAR</button>
+
+    <hr />
+  </body>
+</html>
