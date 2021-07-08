@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+
+    <!--<script>
+            function clrme(){
+          var clrme = document.getElementById("fullname");
+          clrme.value = null;
+      }
+    </script>--->
+  </head>
+  <style>
+    .content {
+     
+      max-width: 300px;
+      margin: auto;
+    }
+    
+  </style>
+  
+  <body style="background-color:rgb(253, 253, 253);">
+    <div class="content">
+      <!-- Page content -->
+       
+    <center><h1><span style="color:red">RED</span><span style="color:rgb(54, 54, 54)">OX</span> 
+        <span style="color:rgb(0, 0, 0)">SUPPLIMENTS</span></h1>
+</center>
+      <center><h2 style="color:rgb(37, 37, 37)">Registration</h2></center>
+
+      <label>First Name</label><br />
+      <input type="text" placeholder="enter first name" id="firstname" />
+      <br /><br />
+      <label>Last Name</label><br />
+      <input type="text" placeholder="enter last name" id="lastname" />
+      <br /><br />
+      <label>Password</label><br />
+      <input type="password" placeholder="set new password" id="setpassword" />
+      <br /><br />
+      <label>Confirm Password</label><br />
+      <input
+        type="password"
+        placeholder="confirm password"
+        id="confirmpassword"
+      />
+      <br /><br />
+      <form>
+        <label>Select Gender</label>
+        <br />
+        <form>
+          <input type="radio" name="gender" value="male" />Male
+          <input type="radio" name="gender" value="female" />Female
+          <input type="radio" name="gender" value="Other" />Other
+        </form>
+        <br />
+        <label>DOB</label>
+        <input type="text" placeholder="type date of birth" />
+         <br> <i>dd/mm/yyyy</i>
+        <br /><br />
+        <label>Select Experience</label>
+        <form>
+          <input type="checkbox" name="Beginner" />Beginner
+          <input type="checkbox" name="Intermediate" />Intermediate
+          <input type="checkbox" name="Advance" />Advance
+        </form>
+        <br /><br />
+        <input type="submit" />
+
+        <input type="reset" />
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+
+    <!--<script>
+            function clrme(){
+          var clrme = document.getElementById("fullname");
+          clrme.value = null;
+      }
+    </script>--->
+  </head>
+  <style>
+    .content {
+     
+      max-width: 300px;
+      margin: auto;
+    }
+    
+  </style>
+  
+  <body style="background-color:silver;">
+    <div class="content">
+      <!-- Page content -->
+
+      <center><h1 style="color:rgb(237, 100, 100)">Fill Form</h1></center>
+      <br /><br />
+      <label>First Name</label><br />
+      <input type="text" placeholder="enter first name" id="firstname" />
+      <br /><br />
+      <label>Last Name</label><br />
+      <input type="text" placeholder="enter last name" id="lastname" />
+      <br /><br />
+      <label>Password</label><br />
+      <input type="password" placeholder="set new password" id="setpassword" />
+      <br /><br />
+      <label>Confirm Password</label><br />
+      <input
+        type="password"
+        placeholder="confirm password"
+        id="confirmpassword"
+      />
+      <br /><br />
+      <form>
+        <label>Select Gender</label>
+        <br />
+        <form>
+          <input type="radio" name="gender" value="male" />Male
+          <input type="radio" name="gender" value="female" />Female
+          <input type="radio" name="gender" value="Other" />Other
+        </form>
+        <br /><br />
+        <label>DOB</label>
+        <input type="text" placeholder="type date of birth" />
+         <br> <i>dd/mm/yyyy</i>
+        <br /><br />
+        <label>Select Education</label>
+        <form>
+          <input type="checkbox" name="10th" />10th
+          <input type="checkbox" name="12th" />12th
+          <input type="checkbox" name="BA/B.COM" />BA/B.COM
+          <input type="checkbox" name="B.E/B.Tech" />B.E/B.Tech
+          <input type="checkbox" name="MBBS/BDS" />MBBS/BDS
+          <input type="checkbox" name="Law" />Law
+          <input type="checkbox" name="Arts" />Arts
+        </form>
+        <br /><br /><br />
+
+        <input type="submit" />
+
+        <input type="reset" />
+      </form>
+    </div>
+  </body>
+</html>
