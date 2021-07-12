@@ -21,15 +21,14 @@
     input {
         float: right;
     }
-
-    img {
-        width: ;
-        height: ;
+    .supphead{
+        width: 1333px ;
+        height: 300px;
     }
 
     figcaption {
         text-align: center;
-        background-color: rgb(221, 221, 221);
+        background-color: rgb(68, 68, 68);
 
     }
 
@@ -56,52 +55,111 @@
         width: 160px;
         height: 230px;
     }
-</style>
+    footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #aa0404;
+  color: rgb(211, 211, 211);
+}
 
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.active {
+  background-color: #aa0404;
+  color: white;
+}
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+</style>
 <body>
-    <h1><span style="color:red">RED</span><span style="color:rgb(54, 54, 54)">OX</span>
-        <span style="color:rgb(0, 0, 0)">SUPPLIMENTS</span></h1>
-    <marquee behavior="alternate" scrollamount="10%" direction="">Use Code <b>REDOX30</b> for 30% flat discount
+    <h1><span style="color:#aa0404">RED</span><span style="color:rgb(54, 54, 54)">OX</span>
+        <span style="color:rgb(37, 37, 37)">SUPPLEMENTS</span></h1>
+    
+    
+    <marquee behavior="alternate" scrollamount="10%" direction="">Use Code <b>REDOX30</b> for 30% flat discount on latest Supplements
     </marquee>
-    <nav>
-        <a href="">Home</a>
-        <a href="">Our Products</a>
-        <a href="">Our Services</a>
-        <a href="">About Us</a>
-        <a href="">Contact us</a>
-        <a href="reg.html">Become our Partner</a>
-        <input type="search" placeholder="search products">
-    </nav>
-    <img src="supp.jpg" alt="SUPPLIMENTS">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#news">Products</a>
+  <a href="#contact">Services</a>
+  <a href="#about">About us</a>
+  <a href="#about">Contact</a>
+  <a href="reg.html">Become Partner</a>
+  <input type="text" placeholder="Search..">
+
+  <a style="float: right;" href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+  <a style="float: right;" href="#"><i class="fa fa-fw fa-user-plus"></i>Signup</a>
+  </div>
+  
+
+<!-----
+<nav>
+    <a style="text-decoration:none" href="">Home</a>
+    <a style="text-decoration:none" href="">Our Products</a>
+    <a style="text-decoration:none" href="">Our Services</a>
+    <a style="text-decoration:none" href="">About Us</a>
+    <a style="text-decoration:none" href="">Contact us</a>
+    <a style="text-decoration:none" href="reg.html">Become our Partner</a>
+    <input type="search" placeholder="search products">
+</nav> --->
+
+    <img src="supp.jpg" alt="SUPPLIMENTS" class="supphead">
     <br><br>
     <center>
-        <h1>Our Suppliments</h1>
+        <h1 style="color:rgb(37, 37, 37)">Our Supplements</h1>
     </center>
     <br><br>
     <figure>
         <img src="pills.png" alt="" class="pills1">
-        <figcaption>Suppliment 1</figcaption>
+        <figcaption style="color: blanchedalmond;">Supplement 1</figcaption>
     </figure>
 
     <figure>
         <img src="pills.png" alt="" class="pills2">
-        <figcaption>Suppliment 2</figcaption>
+        <figcaption style="color: blanchedalmond;">Supplement 2</figcaption>
     </figure>
 
     <figure>
         <img src="pills.png" alt="" class="pills3">
-        <figcaption>Suppliment 3</figcaption>
+        <figcaption style="color: blanchedalmond;">Supplement 3</figcaption>
     </figure>
 
     <figure>
         <img src="pills.png" alt="" class="pills4">
-        <figcaption>Suppliment 4</figcaption>
+        <figcaption style="color: blanchedalmond;">Supplement 4</figcaption>
+    </figure>
+
+    <figure>
+        <img src="pills.png" alt="" class="pills4">
+        <figcaption style="color: blanchedalmond;">Supplement 5</figcaption>
     </figure>
     <br>
     <center>
         <h1>Our Services</h1>
     </center>
-    <h3>Lorem Ipsum</h3>
+    <h3 style="color: rgb(37, 37, 37);">Lorem Ipsum 1</h3>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit veniam dolor ex repellat, at deleniti
         explicabo ea accusamus id inventore nisi odit, quos iste laudantium quasi odio iure consequuntur
         perspiciatis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sed quas quibusdam suscipit, amet
@@ -110,7 +168,7 @@
         accusantium dignissimos. Quod voluptatem dolor ut cupiditate maxime! Dicta consequuntur labore hic ducimus
         provident. Doloribus iure architecto doloremque.</p>
 
-    <h3>Loremm Ipsum 2</h3>
+    <h3 style="color: rgb(37, 37, 37);">Loremm Ipsum 2</h3>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit veniam dolor ex repellat, at deleniti
         explicabo ea accusamus id inventore nisi odit, quos iste laudantium quasi odio iure consequuntur
         perspiciatis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sed quas quibusdam suscipit, amet
@@ -121,20 +179,27 @@
     <h3>Loremm Ipsum 2</h3>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit veniam dolor ex repellat, at deleniti
         explicabo ea accusamus id inventore nisi odit, quos iste laudantium quasi odio iure consequuntur
-        perspiciatis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sed quas quibusdam suscipit, amet
-        maxime quam id
-        eveniet quisquam vero est at assumenda veritatis officia rem esse velit, pariatur magni nihil maiores
+        perspiciatis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sed quas quibusdam susipit, amet
+        maxime quam ideveniet quisquam vero est at assumenda veritatis officia rem esse velit, pariatur magni nihil maiores
         accusantium dignissimos. Quod voluptatem dolor ut cupiditate maxime! Dicta consequuntur labore hic ducimus
         provident. Doloribus iure architecto doloremque.</p>
 
-    <center><h2>About Us</h2></center>
+    <h1 style="text-align: center;" style="color: rgb(37, 37, 37);">About Us</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sunt modi id distinctio quos quo doloribus,
         inventore et maiores natus, iusto reiciendis quibusdam dicta maxime. Accusamus ratione reiciendis, quam porro
         aspernatur quaerat enim, quidem sequi iure ullam, quibusdam quasi error unde. Dicta adipisci voluptate alias
-        praesentium sed laudantium sequi ipsam fugit, beatae explicabo sint quas cumque officia, dolore repellendus quis
+        praesentium sed laudantium sequi ipsam fugit, <br><br>    beatae explicabo sint quas cumque officia, dolore repellendus quis
         voluptas pariatur consectetur possimus eum voluptatem necessitatibus facere qui? Nulla nesciunt odio rerum
         maiores, quas nam, hic fugiat voluptates, officia dolor consequatur quam. Rerum aliquid, libero ipsa fugit optio
         alias? Asperiores architecto debitis totam. Vitae at atque necessitatibus nostrum nesciunt?</p>
-</body>
+        <br><br>
 
+    <h1 style="text-align: center;">Contact us</h1>
+    
+
+</body>
+<footer>
+    <p>Website Created by: <br>  Mohd Azeem<br>
+        <a href="mailto:mohdazm007@gmail.com">mohdazm007@gmail.com</a></p>
+  </footer>
 </html>
